@@ -1,0 +1,130 @@
+*{
+    margin:0;
+    scroll-behavior: smooth;
+    transition: all 0.3s ease-in-out;
+    font-family: "open sans";
+    
+    a{
+        text-decoration: none;
+    }
+
+    img{
+        width: 100%;
+        object-fit: cover;
+    }
+    h1, h2{
+        font-family: "Prata";
+        font-weight: 400;
+        font-size: 52px;
+        line-height: 78px;
+    }
+    h3{
+        font-family: "Prata";
+        font-size: 20px;
+        line-height: 20px;
+        font-weight: 400;
+    }
+    ul{
+        list-style: none;
+        padding-left: 0;
+    }
+}
+body{
+    header{
+        display: flex;
+        max-width: 1920px;
+        height: 200px;
+        align-items: center;
+        justify-content: space-between;
+        margin: auto;
+        img{
+            height: 180px;
+        }
+        nav{
+            ul{
+                display: flex;
+                gap: 40px;
+                padding: 20px;
+                a{
+                    color: black;
+                }
+            }
+        }
+    }
+    footer{
+        max-width: 1920px;
+        display: flex;
+        height: 119px;
+        align-items: end;
+        justify-content: space-between;
+        margin: auto;
+        padding: 20px;
+    }
+    main{
+        .deuxs1{
+            max-width: 1440px;
+            margin: auto;
+            div{
+                display: flex;
+                gap: 150px;
+                padding: 20px;
+                align-items: center;
+            }
+            img{
+                height: 380px;
+                border-radius: 12px;
+                margin: 50px 80px 50px 80px ;
+                width: stretch;
+            }
+        }
+        .deuxs2{
+            max-width: 1440px;
+            margin: auto;
+            justify-items: center;
+            >span{
+                background-color: #f1f1f1;
+                color: #333333;
+                font-family: "roboto";
+                font-size: 13px;
+                border-radius: 12px;
+                padding: 5px 6px 5px 6px;
+                justify-self: center;
+                display: block;
+                margin-bottom: 10px;
+            }
+            >p{
+                margin-top: 10px;
+                max-width: 658px;
+                text-align: center;
+                margin-bottom: 10px;
+            }
+            div{
+                display: flex;
+                gap: 30px;
+                max-width: 1180px;
+                article{
+                    border-radius: 12px;
+                    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.20);
+                    padding-bottom: 10px;
+                    h3{
+                        padding: 10px;
+                    }
+                    p{
+                        padding: 0 10px 10px 10px;
+                        font-size: 14px;
+                    }
+                    span{
+                        font-family: "prata";
+                        font-size: 24px;
+                        font-weight: 400;
+                        margin: 0 10px 0 10px;
+                    }
+                    img{
+                        border-top-left-radius: 12px;
+                        border-top-right-radius: 12px;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -102,6 +102,7 @@ body{
                 display: flex;
                 gap: 30px;
                 max-width: 1180px;
+                padding-bottom: 80px;
                 article{
                     border-radius: 12px;
                     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.20);
@@ -123,6 +124,44 @@ body{
                         border-top-left-radius: 12px;
                         border-top-right-radius: 12px;
                     }
+                }
+            }
+        }
+        .deuxs3{
+            background-color: #F7F7F7;
+            padding-top: 80px;
+            display: flex;
+            justify-content:space-around ;
+            justify-content: center;
+            img{
+                max-width: 700px;
+                border-radius: 12px;
+                margin: 20px;
+            }
+            article{
+                max-width: 700px;
+                margin: 20px;
+                >span{
+                    background-color: #f1f1f1;
+                    color: #333333;
+                    font-family: "roboto";
+                    font-size: 13px;
+                    border-radius: 12px;
+                    padding: 5px 6px 5px 6px;
+                    margin-bottom: 10px;
+                }
+                h2{
+                    padding-top: 15px;
+                    padding-bottom: 15px;
+                }
+                a{
+                    display: block;
+                    width: fit-content;
+                    color: white;
+                    background-color: black;
+                    border-radius: 3px;
+                    padding: 12px 24px 12px 24px;
+                    margin-top: 30px;
                 }
             }
         }

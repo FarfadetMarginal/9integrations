@@ -1,0 +1,260 @@
+:root{
+    --bc:#F2F4F2;
+    --green:#006A19;
+    --turq:#02797E;
+}
+*{
+    margin:0;
+    scroll-behavior: smooth;
+    transition: all 0.3s ease-in-out;
+    font-family: "roboto";
+    
+    a{
+        text-decoration: none;
+    }
+
+    img{
+        width: 100%;
+        object-fit: cover;
+    }
+    h1, h2{
+        font-family: "Permanent marker";
+        font-weight: 400;
+        font-size: 37px;
+        color: var(--green);
+        line-height: 57px;
+    }
+    ul{
+        list-style: none;
+        padding-left: 0;
+    }
+    p{
+        font-family: "open sans";
+        color: black;
+        font-size: 14px;
+        line-height: 24px;
+        font-weight: 400;
+    }
+    hr{
+        width: 80px;
+        height: 3px;
+        border: none;
+        background-color: var(--green);
+    }
+}
+
+body{
+    header{
+        height: 286px;
+        max-width: 1440px;
+        margin: auto;
+        display: grid;
+        >a{
+            justify-self: center;
+            img{
+                height: 200px;
+                width: 200px;
+                justify-self: center;
+            }
+        }
+        nav{
+            ul{
+                display: flex;
+                width: 60%;
+                justify-self: center;
+                justify-content: space-between;
+                li:nth-child(1) a{
+                    color: var(--green);
+                }
+                a{
+                    font-weight: 600;
+                    font-size: 16px;
+                    line-height: 20px;
+                    color: black;
+                }
+            }
+        }
+    }
+    footer{
+        text-align: center;
+        height: 74px;
+        align-content: space-evenly;
+        p{
+            color: var(--turq);
+        }
+    }
+    main{
+        .uns1 a, .uns4 >a, uns5 button{
+            background-color: var(--green);
+            color: white;
+            font-weight: 500;
+            font-size: 15px;
+            padding: 10px 25px 10px 25px;
+            text-align: center;
+            display: block;
+            width: fit-content;
+            justify-content: center;
+            border-radius: 3px;
+        }
+        .uns1{
+            background-color: var(--bc);
+            >div{
+                max-width: 1440px;
+                margin: auto;
+                display: flex;
+                gap: 15px;
+                padding: 20px;
+                article{
+                    flex: 0 0 48%;
+                    align-content: space-evenly;
+                    p{
+                        padding-top: 40px;
+                    }
+                    a{
+                        margin-top: 50px;
+                        justify-self: center;
+                    }
+                    >div{
+                        display: flex;
+                        align-items: center;
+                        gap: 25px;
+                    }
+                }
+                img{
+                    flex: 0 0 48%;
+                    max-height: 700px;
+                    max-width: 700px;
+                    width: 51%;
+                }
+            }
+        }
+        .uns2{
+            max-width: 1440px;
+            margin: auto;
+            justify-items: center;
+            padding: 20px;
+            padding-top: 80px;
+            .uns2dt{
+                display: flex;
+                align-items: center;
+                gap: 30px;
+            }
+            .uns2d1{
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr 1fr;
+                margin-top: 60px;
+                margin-bottom: 80px;
+                article{
+                    text-align: center;
+                    padding: 35px;
+                    border-left-style: solid;
+                    border-color: var(--green);
+                    border-width: 2px;
+                    &:nth-child(1){
+                        border-left-style: none;  
+                    }
+                    i{
+                        font-size: 70px;
+                        color: var(--turq);
+                    }
+                    h3{
+                        font-family: "Permanent marker";
+                        font-weight: 400;
+                        font-size: 21px;
+                        color: var(--turq);
+                        padding-top: 25px;
+                        padding-bottom: 25px;
+                    }
+                }
+            }
+        }
+        .uns3{
+            background-color: var(--turq);
+            >div{
+                max-width: 1440px;
+                margin: auto;
+                padding: 20px;
+                div{
+                    display: flex;
+                    align-items: center;
+                    gap: 30px;
+                    margin-top: 50px;
+                    h2{
+                        color: white;
+                    }
+                    hr{
+                        background-color: white;
+                    }
+                }
+                article{
+                    display: grid;
+                    grid-template-columns: repeat(6, 1fr);
+                    gap: 30px;
+                    align-items: center;
+                    margin-top: 120px;
+                    margin-bottom: 140px;
+                    img{
+                        max-height: 150px;
+                        max-width: 176px;
+                        
+                    }
+                }
+            }
+        }
+        .uns4{
+            max-width: 1440px;
+            margin: auto;
+            padding: 20px;
+            justify-items: center;
+            margin-bottom: 50px;
+            div{
+                display: flex;
+                align-items: center;
+                gap: 30px;
+                margin-top: 50px; 
+                margin-bottom: 50px;                   
+            }
+            article{
+                display: flex;
+                gap: 20px;
+                width: 100%;
+                margin-bottom: 60px;
+                a{
+                    flex: 1;
+                }
+                img{
+                    height: 300px;
+                }
+            }
+        }
+        .uns5{
+            background-color: var(--bc);
+            >div{
+                max-width: 1440px;
+                margin: auto;
+                padding: 20px;
+                .uns5d1{
+                    display: flex;
+                    align-items: center;
+                    gap: 30px;
+                    margin-top: 30px;
+                }             
+                .uns5d2{
+                    display:flex;
+                    form{
+                        display: grid;
+                        label{
+                            font-family: "open sans";
+                            padding-top: 30px;
+                            padding-bottom: 10px;
+                        }
+                        input{
+                            padding: 7px 15px 7px 15px;
+                            border-radius: 3px;
+                        }
+                    }
+                }  
+            }
+        }
+    }
+}

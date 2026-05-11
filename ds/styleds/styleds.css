@@ -47,6 +47,11 @@ body{
                 padding: 20px;
                 a{
                     color: black;
+                    display: inline-block;
+                    &:hover{
+                        transform: scale(1.2);
+                        color: rgb(202, 20, 20);
+                    }
                 }
             }
         }
@@ -81,6 +86,7 @@ body{
             max-width: 1440px;
             margin: auto;
             justify-items: center;
+            padding: 20px;
             >span{
                 background-color: #f1f1f1;
                 color: #333333;
@@ -163,6 +169,92 @@ body{
                     border-radius: 3px;
                     padding: 12px 24px 12px 24px;
                     margin-top: 30px;
+                    border-style: solid;
+                    border-width: 1px;
+                    &:hover{
+                        background-color: white;
+                        color: black;
+                        border-color: black;
+                    }
+                }
+            }
+        }
+        .deuxs4{
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            justify-self: center;
+            max-width: 540px;  
+            padding: 20px;
+            padding-top: 80px;      
+            form{
+                display: grid;
+                margin: 40px;
+                gap: 20px;
+                input{
+                    padding: 10px;
+                    border-color: #69727D;
+                    border-radius: 3px;
+                    border-width: 1px;
+                }
+                #message{
+                    padding: 10px;
+                    border-color: #69727D;
+                    border-radius: 3px;
+                    border-width: 1px;   
+                }
+                button{
+                    display: block;
+                    color: white;
+                    background-color: black;
+                    border-radius: 3px;
+                    padding: 12px 24px 12px 24px;
+                    border-style: none;
+                    font-size: 16px;
+                    border-style: solid;
+                    border-width: 1px;
+                    &:hover{
+                        background-color: white;
+                        color: black;
+                        border-color: black;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width :767px) {
+
+    body{
+        header{
+            display: grid;
+            justify-self: center;
+        }
+        footer{
+            display: grid;
+        }
+        main{
+            .deuxs1{
+                div{
+                    display: grid;
+                    padding-top: 40px;
+                    gap: 20px;
+                }
+                img{
+                    margin: 50px 30px 50px 30px;;
+                }
+            }
+            .deuxs2{
+                div{
+                    display: grid;
+                }
+            }
+            .deuxs3{
+                display: grid;
+                img{
+                    width: 86%;
                 }
             }
         }

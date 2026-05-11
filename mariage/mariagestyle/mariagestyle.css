@@ -71,18 +71,21 @@ body{
         }
     }
     footer{
-        max-width: 1920px;
-        display: flex;
-        height: 119px;
-        align-items: end;
-        justify-content: space-between;
-        margin: auto;
-        padding: 20px;
-        ul{
+        background-color: #FBEBEB;
+        div{
+            max-width: 1920px;
             display: flex;
-            gap: 15px;
-            a{
-                color: black;
+            height: 119px;
+            align-items: end;
+            justify-content: space-between;
+            margin: auto;
+            padding: 20px;
+            ul{
+                display: flex;
+                gap: 15px;
+                a{
+                    color: black;
+                }
             }
         }
     }
@@ -131,33 +134,35 @@ body{
                 }
             }
         }
-        .troiss2{
+        .quatres2{
             max-width: 1440px;
             margin: auto;
             justify-items: center;
             padding: 20px;
-            h2{
-                padding-top: 60px;
-                padding-bottom: 40px;
-                justify-self: start;
+            >p{
+                margin-top: 20px;
+                max-width: 658px;
+                text-align: center;
+                margin-bottom: 20px;
             }
-            >div{
-                display: grid;
-                grid-template-columns: 1fr 1fr 1fr 1fr;
+            h2{
+                padding-top: 50px;
+            }
+            div{
+                display: flex;
                 gap: 30px;
-                max-width: 1440px;
+                max-width: 1180px;
+                padding-bottom: 80px;
                 article{
-                    border-radius: 12px;
-                    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.20);
                     padding-bottom: 10px;
-                    display: flex;
-                    flex-direction: column;
+                    text-align: center;
                     h3{
                         padding: 10px;
                     }
                     p{
                         padding: 0 10px 10px 10px;
                         font-size: 14px;
+                        line-height: 23px;
                     }
                     span{
                         font-family: "prata";
@@ -165,77 +170,124 @@ body{
                         font-weight: 400;
                         margin: 0 10px 0 10px;
                     }
-                    img{
-                        border-top-left-radius: 12px;
-                        border-top-right-radius: 12px;
-                        height: 200px;
+                    i{
+                        font-size: 48px;
+                        color: #EC4899;
+                        padding-bottom: 20px ;
                     }
-                    div{
+                }
+            }
+        }
+        .quatres3{
+            background-color: #FBEBEB;
+            >div{
+                max-width: 1440px;
+                margin: auto;
+                justify-items: center;
+                padding: 20px;
+                padding-bottom: 80px;
+                h2{
+                    padding-top: 60px;
+                    padding-bottom: 10px;
+                }
+                >p{
+                    max-width: 450px;
+                    text-align: center;
+                    padding-bottom: 20px;
+                }
+                >div{
+                    display: grid;
+                    grid-template-columns: 1fr 1fr 1fr;
+                    gap: 30px;
+                    max-width: 1440px;
+                    article{
+                        border-radius: 12px;
+                        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.20);
+                        padding-bottom: 10px;
                         display: flex;
-                        align-items: center;
-                        margin-top: auto;
-                        justify-content: space-between;
-                        a{
-                            display: inline-block;
-                            color: black;
-                            font-weight: 500;
-                            font-size: 15px;
-                            font-family: "roboto";
-                            margin: 0 20px 0 10px;
-                            &:hover{
-                                transform: scale(1.2);
-                                color: #DD6336;
-                            }
+                        flex-direction: column;
+                        background-color: white;
+                        h3{
+                            padding: 10px;
+                            padding-top: 20px;
+                        }
+                        p{
+                            padding: 0 10px 10px 10px;
+                            font-size: 14px;
+                        }
+                        img{
+                            border-top-left-radius: 12px;
+                            border-top-right-radius: 12px;
+                            height: 200px;
                         }
                     }
                 }
             }
         }
-        .troiss3{
-            background-color: #FBEBEB;
+        .quatres4{
+            display: flex;
+            flex-direction: column;
+            justify-self: center;
+            padding: 20px;
+            padding-top: 120px;  
+            width: 90%;
+            max-width: 1140px;
+            align-items: center;
+            >p{
+                padding-top: 20px;
+                max-width: 420px;
+                text-align: center;
+            }    
+            form{
+                max-width: 735px;  
+                display: grid;
+                margin: 40px;
+                gap: 20px;
+                width: -webkit-fill-available;
+                input{
+                    padding: 10px;
+                    border-color: #69727D;
+                    border-radius: 3px;
+                    border-width: 1px;
+                }
+                #message{
+                    padding: 10px;
+                    border-color: #69727D;
+                    border-radius: 3px;
+                    border-width: 1px;   
+                }
+                button{
+                    display: block;
+                    color: white;
+                    background-color: black;
+                    border-radius: 3px;
+                    padding: 12px 24px 12px 24px;
+                    border-style: none;
+                    font-size: 16px;
+                    border-style: solid;
+                    border-width: 1px;
+                    width: fit-content;
+                    justify-self: center;
+                    &:hover{
+                        background-color: white;
+                        color: black;
+                        border-color: black;
+                    }
+                }
+            }
             div{
-                display: flex;
-                justify-content: center;
-                flex-direction: column;
-                justify-self: center;
-                max-width: 540px;  
-                padding: 20px;
-                padding-top: 120px;  
-                >p{
-                    padding-top: 20px;
-                }    
-                form{
-                    display: grid;
-                    margin: 40px;
-                    gap: 20px;
-                    input{
-                        padding: 10px;
-                        border-color: #69727D;
-                        border-radius: 3px;
-                        border-width: 1px;
-                    }
-                    #message{
-                        padding: 10px;
-                        border-color: #69727D;
-                        border-radius: 3px;
-                        border-width: 1px;   
-                    }
-                    button{
-                        display: block;
-                        color: white;
-                        background-color: black;
-                        border-radius: 3px;
-                        padding: 12px 24px 12px 24px;
-                        border-style: none;
-                        font-size: 16px;
-                        border-style: solid;
-                        border-width: 1px;
-                        &:hover{
-                            background-color: white;
-                            color: black;
-                            border-color: black;
-                        }
-                    }
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr ;
+                max-width: 1140px;
+                width: 100%;
+                gap: 20px;
+                padding-top: 60px;
+                padding-bottom: 40px;
+                img{
+                    width: 100%;
+                    height: 320px;
+                    display: block;
+                    object-fit: cover;
                 }
             }
         }
@@ -243,31 +295,66 @@ body{
 }
 
 
+
+@media screen and (max-width :1024px) {
+     body{
+        main{
+            .quatres1{
+                display: grid;
+                height: auto;
+            }
+            .quatres4{
+                width: auto;
+            }
+        }
+    }
+
+}
+
 @media screen and (max-width :767px) {
 
     body{
         header{
-            display: grid;
-            justify-self: center;
-            justify-items: center;
-            height: fit-content;
-            img{
-                width: 180px;
+            div{
+                display: grid;
+                justify-self: center;
+                justify-items: center;
+                height: fit-content;
+                img{
+                    width: 180px;
+                }
+                nav{
+                    ul{
+                        display: grid;
+                        text-align: center;
+                    }
+                }
             }
         }
         footer{
-            display: grid;
+            div{
+                display: grid;
+            }
         }
+
         main{
-            .troiss2{
+            .quatres1{
                 div{
-                    grid-template-columns: 1fr;
+                    img{
+                        width: 35%;
+                    }
                 }
             }
-            .troiss1{
-                display: grid;
-                img{
-                    width: 86%;
+            .quatres2{
+                div{
+                    flex-direction: column;
+                }
+            }
+            .quatres3{
+                >div{
+                    >div{
+                        grid-template-columns: 1fr;
+                    }
                 }
             }
         }

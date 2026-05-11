@@ -31,26 +31,40 @@
 }
 body{
     header{
-        display: flex;
-        max-width: 1920px;
-        height: 200px;
-        align-items: center;
-        justify-content: space-between;
-        margin: auto;
-        img{
-            height: 180px;
-        }
-        nav{
-            ul{
-                display: flex;
-                gap: 40px;
-                padding: 20px;
-                a{
-                    color: #7A7A7A;
-                    display: inline-block;
-                    &:hover{
-                        transform: scale(1.2);
-                        color: #DD6336;
+        background-color: #FBEBEB;
+        div{
+            display: flex;
+            max-width: 1920px;
+            height: 200px;
+            align-items: center;
+            justify-content: space-evenly;
+            margin: auto;
+            img{
+                height: 180px;
+            }
+            >a{
+                font-family: "roboto";
+                color: black;
+                font-weight: 500;
+                font-size: 15px;
+                display: inline-block;
+                &:hover{
+                    transform: scale(1.2);
+                    color: #EC4899;
+                }
+            }
+            nav{
+                ul{
+                    display: flex;
+                    gap: 40px;
+                    padding: 20px;
+                    a{
+                        color: #7A7A7A;
+                        display: inline-block;
+                        &:hover{
+                            transform: scale(1.2);
+                            color: #EC4899;
+                        }
                     }
                 }
             }
@@ -73,21 +87,30 @@ body{
         }
     }
     main{
-        .troiss1{
+        .quatres1{
             background-color: #FBEBEB;
-            padding-top: 30px;
-            padding-bottom: 30px;
+            padding-top: 60px;
+            padding-bottom: 40px;
             display: flex;
             justify-content:space-around ;
             justify-content: center;
-            img{
-                max-width: 700px;
-                border-radius: 12px;
-                margin: 20px;
-                width: 50%;
+            height: 600px;
+            div{
+                display: flex;
+                img{
+                    max-width: 334px;
+                    margin: 20px;
+                    width: 40%;
+                }
+                #img1p4{
+                    transform: translateY(25px);
+                }
+                #img2p4{
+                    transform: translateY(-25px);
+                }
             }
             article{
-                max-width: 700px;
+                max-width: 620px;
                 margin: 20px;
                 align-content: center;
                 h1{
@@ -103,7 +126,7 @@ body{
                     padding: 30px;
                     &:hover{
                         transform: scale(1.2);
-                        color: #DD6336;
+                        color: #EC4899;
                     }
                 }
             }

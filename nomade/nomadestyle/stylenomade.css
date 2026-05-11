@@ -1,0 +1,245 @@
+*{
+    margin:0;
+    scroll-behavior: smooth;
+    transition: all 0.3s ease-in-out;
+    font-family: "open sans";
+    
+    a{
+        text-decoration: none;
+    }
+
+    img{
+        width: 100%;
+        object-fit: cover;
+    }
+    h1, h2{
+        font-family: "Prata";
+        font-weight: 400;
+        font-size: 35px;
+        line-height: 35px;
+    }
+    h3{
+        font-family: "Prata";
+        font-size: 20px;
+        line-height: 20px;
+        font-weight: 400;
+    }
+    ul{
+        list-style: none;
+        padding-left: 0;
+    }
+}
+body{
+    header{
+        display: flex;
+        max-width: 1920px;
+        height: 200px;
+        align-items: center;
+        justify-content: space-between;
+        margin: auto;
+        img{
+            height: 180px;
+        }
+        nav{
+            ul{
+                display: flex;
+                gap: 40px;
+                padding: 20px;
+                a{
+                    color: #7A7A7A;
+                    display: inline-block;
+                    &:hover{
+                        transform: scale(1.2);
+                        color: #DD6336;
+                    }
+                }
+            }
+        }
+    }
+    footer{
+        max-width: 1920px;
+        display: flex;
+        height: 119px;
+        align-items: end;
+        justify-content: space-between;
+        margin: auto;
+        padding: 20px;
+    }
+    main{
+        .troiss1{
+            background-color: #FBEBEB;
+            padding-top: 30px;
+            padding-bottom: 30px;
+            display: flex;
+            justify-content:space-around ;
+            justify-content: center;
+            img{
+                max-width: 700px;
+                border-radius: 12px;
+                margin: 20px;
+                width: 50%;
+            }
+            article{
+                max-width: 700px;
+                margin: 20px;
+                align-content: center;
+                h1{
+                    padding-top: 15px;
+                    padding-bottom: 20px;
+                }
+                a{
+                    font-family: "roboto";
+                    color: black;
+                    font-weight: 500;
+                    font-size: 15px;
+                    display: inline-block;
+                    padding: 30px;
+                    &:hover{
+                        transform: scale(1.2);
+                        color: #DD6336;
+                    }
+                }
+            }
+        }
+        .troiss2{
+            max-width: 1440px;
+            margin: auto;
+            justify-items: center;
+            padding: 20px;
+            h2{
+                padding-top: 60px;
+                padding-bottom: 40px;
+                justify-self: start;
+            }
+            >div{
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr 1fr;
+                gap: 30px;
+                max-width: 1440px;
+                article{
+                    border-radius: 12px;
+                    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.20);
+                    padding-bottom: 10px;
+                    display: flex;
+                    flex-direction: column;
+                    h3{
+                        padding: 10px;
+                    }
+                    p{
+                        padding: 0 10px 10px 10px;
+                        font-size: 14px;
+                    }
+                    span{
+                        font-family: "prata";
+                        font-size: 24px;
+                        font-weight: 400;
+                        margin: 0 10px 0 10px;
+                    }
+                    img{
+                        border-top-left-radius: 12px;
+                        border-top-right-radius: 12px;
+                        height: 200px;
+                    }
+                    div{
+                        display: flex;
+                        align-items: center;
+                        margin-top: auto;
+                        justify-content: space-between;
+                        a{
+                            display: inline-block;
+                            color: black;
+                            font-weight: 500;
+                            font-size: 15px;
+                            font-family: "roboto";
+                            margin: 0 20px 0 10px;
+                            &:hover{
+                                transform: scale(1.2);
+                                color: #DD6336;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .troiss3{
+            background-color: #FBEBEB;
+            div{
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                justify-self: center;
+                max-width: 540px;  
+                padding: 20px;
+                padding-top: 120px;  
+                >p{
+                    padding-top: 20px;
+                }    
+                form{
+                    display: grid;
+                    margin: 40px;
+                    gap: 20px;
+                    input{
+                        padding: 10px;
+                        border-color: #69727D;
+                        border-radius: 3px;
+                        border-width: 1px;
+                    }
+                    #message{
+                        padding: 10px;
+                        border-color: #69727D;
+                        border-radius: 3px;
+                        border-width: 1px;   
+                    }
+                    button{
+                        display: block;
+                        color: white;
+                        background-color: black;
+                        border-radius: 3px;
+                        padding: 12px 24px 12px 24px;
+                        border-style: none;
+                        font-size: 16px;
+                        border-style: solid;
+                        border-width: 1px;
+                        &:hover{
+                            background-color: white;
+                            color: black;
+                            border-color: black;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width :767px) {
+
+    body{
+        header{
+            display: grid;
+            justify-self: center;
+            justify-items: center;
+            height: fit-content;
+            img{
+                width: 180px;
+            }
+        }
+        footer{
+            display: grid;
+        }
+        main{
+            .troiss2{
+                div{
+                    grid-template-columns: 1fr;
+                }
+            }
+            .troiss1{
+                display: grid;
+                img{
+                    width: 86%;
+                }
+            }
+        }
+    }
+}

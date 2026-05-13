@@ -75,4 +75,82 @@ body{
             }
         }
     }
+    footer{
+        background-color: black;
+        div{
+            max-width: 1920px;
+            margin: auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            padding: 5px;
+            img{
+                width: 180px;
+            }
+            nav{
+                ul{
+                    gap: 20px;
+                    display: flex;
+                    a{
+                        color: var(--fond);
+                    }
+                }
+            }
+        }
+    }
+    main{
+        .cinqs1{
+            background-image: url(../maquillageimg/fondtfhjk.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            height: 800px;
+            >div{
+                align-content: center;
+                background-color: rgba(255, 255, 255, 0.5);
+                height: 800px;
+                p{
+                    font-family: "roboto";
+                    max-width: 770px;
+                    margin: auto;
+                    padding-top: 30px;
+                    padding-bottom: 40px;
+                }
+                >div{  
+                    max-width: 1920px;
+                    margin: auto;
+                    text-align: center;
+                    >div{
+                        a{
+                            display: inline-block;
+                            color: white;
+                            font-weight: 500;
+                            font-size: 15px;
+                            border-radius: 3px;
+                            background-color: var(--fushia);
+                            padding: 12px 24px 12px 24px ;
+                            box-shadow: 0px 4px 15px rgba(0, 0, 10, 0.5);
+                            margin-right: 15px;
+                            &:hover{
+                                color: var(--fushia);
+                                background-color: white;
+                            }
+                        } 
+                        .learnmore{
+                            color: var(--fushia);
+                            background-color: white;
+                            margin-left: 15px;
+                            &:hover{
+                                color: white;
+                                background-color: var(--fushia);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .cinqs2{
+            margin: auto;
+        }
+    }
 }

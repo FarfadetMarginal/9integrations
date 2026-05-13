@@ -99,6 +99,21 @@ body{
         }
     }
     main{
+        a{
+            display: inline-block;
+            color: white;
+            font-weight: 500;
+            font-size: 15px;
+            border-radius: 3px;
+            background-color: var(--fushia);
+            padding: 12px 24px 12px 24px ;
+            box-shadow: 0px 4px 15px rgba(0, 0, 10, 0.5);
+            margin-right: 15px;
+            &:hover{
+                color: var(--fushia);
+                background-color: white;
+            }
+        } 
         .cinqs1{
             background-image: url(../maquillageimg/fondtfhjk.jpg);
             background-repeat: no-repeat;
@@ -109,33 +124,19 @@ body{
                 align-content: center;
                 background-color: rgba(255, 255, 255, 0.5);
                 height: 800px;
-                p{
-                    font-family: "roboto";
-                    max-width: 770px;
-                    margin: auto;
-                    padding-top: 30px;
-                    padding-bottom: 40px;
-                }
                 >div{  
+                    padding: 5px;
                     max-width: 1920px;
                     margin: auto;
                     text-align: center;
+                    p{
+                        font-family: "roboto";
+                        max-width: 770px;
+                        margin: auto;
+                        padding-top: 30px;
+                        padding-bottom: 40px;
+                    }
                     >div{
-                        a{
-                            display: inline-block;
-                            color: white;
-                            font-weight: 500;
-                            font-size: 15px;
-                            border-radius: 3px;
-                            background-color: var(--fushia);
-                            padding: 12px 24px 12px 24px ;
-                            box-shadow: 0px 4px 15px rgba(0, 0, 10, 0.5);
-                            margin-right: 15px;
-                            &:hover{
-                                color: var(--fushia);
-                                background-color: white;
-                            }
-                        } 
                         .learnmore{
                             color: var(--fushia);
                             background-color: white;
@@ -150,7 +151,95 @@ body{
             }
         }
         .cinqs2{
+            padding: 5px;
             margin: auto;
+            max-width: 1440px;
+            padding-bottom: 80px;
+            h2{
+                justify-self: center;
+                padding: 50px 5px 50px 5px;
+            }
+            div{
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr 1fr;
+                gap: 30px;
+                article{
+                    box-shadow: 0px 4px 15px rgba(0, 0, 10, 0.2);
+                    border-radius: 12px;
+                    img{
+                        height: 180px;
+                        border-top-left-radius : 12px;
+                        border-top-right-radius: 12px ;
+                    }
+                    h3, p, span{
+                        padding: 5px 15px 5px 15px;
+                    }
+                    span{
+                        justify-self: center;
+                        color: var(--fushia);
+                        font-family: "arima";
+                        font-weight: 700;
+                        font-size: 20px;
+                        display: flex;
+                    }
+                }
+            }
+        }
+        .cinqs3{
+            background-color: var(--fond);
+            >div{
+                padding: 5px;
+                max-width: 1440px;
+                margin: auto;
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                align-items: center;
+                gap: 20px;
+                padding-bottom: 80px;
+                padding-top: 80px;
+                img{
+                    border-radius: 12px;
+                }
+                p{
+                    padding-bottom: 30px;
+                    padding-top: 30px;
+                    font-family: "roboto";
+                }
+            }
+        }
+        .cinqs4{
+            max-width: 1440px;
+            margin: auto;
+            >div{
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+                gap: 30px;
+                article{
+                    border-radius: 12px;
+                    box-shadow: 0px 4px 15px rgba(0, 0, 10, 0.2);
+                    padding: 25px;
+                    >div{
+                        display: flex;
+                        align-items: center;
+                        gap: 20px;
+                        img{
+                            width: 80px;
+                            height: 80px;
+                            border-radius: 40px;
+                        }
+                        >div{
+                            i{
+                                color: #FBEBEB;
+                            }
+                            span{
+                                i{
+                                    color: var(--fushia);
+                                }
+                            }
+                        }
+                    }
+                }
+            }
         }
     }
 }

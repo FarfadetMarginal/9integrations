@@ -1,0 +1,229 @@
+:root{
+    --gristxt:#7A7A7A;
+    --grisfond:#F1F1F1;
+}
+
+*{
+    margin:0;
+    scroll-behavior: smooth;
+    transition: all 0.3s ease-in-out;
+    font-family: "archivo";
+    
+    a{
+        text-decoration: none;
+    }
+    img{
+        width: 100%;
+        object-fit: cover;
+    }
+    ul{
+        list-style: none;
+        padding-left: 0;
+    }
+    h1{
+        font-weight: 600;
+        font-size: 40px;
+        color: white;
+    }
+    
+    h2{
+        font-weight: 600;
+        font-size: 35px;
+        color: black;
+    }
+    h3{
+        font-weight: 600;
+        font-size: 25px;
+        color: black;
+    }
+    p{
+        color: var(--gristxt);
+        line-height: 24px;
+    }
+}
+
+body{
+    header{
+        max-width: 1440px;
+        margin: auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px;
+        img{
+            width: 100px;
+        }
+        nav{
+            ul{
+                display: flex;
+                li{
+                    padding: 20px;
+                    a{
+                        color: black;
+                        display: inline-block;
+                        &:hover{
+                            transform: scale(1.1);
+                            color: var(--gristxt);
+                        }
+                    }
+                }
+            }
+        }
+    }
+    footer{
+        background-color: black;
+        >div{
+            max-width: 1440px;
+            margin: auto;
+            display: flex;
+            padding: 10px;
+            align-items: center;
+            justify-content: space-between;
+            img{
+                width: 100px;
+            }
+            ul{
+                display: flex;
+                li{
+                    a{
+                        color: white;
+                        padding: 20px;
+                        display: inline-block;
+                        &:hover{
+                            transform: scale(1.1);
+                            color: var(--gristxt);
+                        }
+                    }
+                }
+            }
+            p{
+                color: white;
+            }
+        }
+    }
+
+    main{
+        a{
+        display: block;
+        color: white;
+        background-color: black;
+        padding: 12px 24px 12px 24px;
+        border-style: solid;
+        border-width: 1px;
+        font-size: 16px;
+        width: fit-content;
+        justify-self: center;
+        &:hover{
+            background-color: white;
+            color: black;
+            }
+        }
+        .sixs1{
+            background-image: url(../boumimg/chauveecran.jpg);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            height: 435px;
+            >div{
+                background-color: rgba(0, 0, 0, 0.24);
+                height: 100%;
+                align-content: center;
+                text-align: center;
+                h1{
+                    max-width: 340px;
+                    margin: auto;
+                }
+                p{
+                    color: white;
+                    max-width: 635px;
+                    margin: auto;
+                    padding-bottom: 40px;
+                }
+                a{
+                    color: black;
+                    background-color: white;
+                    &:hover{
+                    background-color: black;
+                    color: white;
+                    }
+                }
+                
+            }
+        }
+        .sixs2{
+            background-color: var(--grisfond);
+            padding: 10px;
+            padding-top: 50px;
+            padding-bottom: 50px;
+            >div{
+                max-width: 1140px;
+                margin: auto;
+                padding: 10px;
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                gap: 40px;
+                >div{
+                    display: grid;
+                    grid-template-columns: 1fr 1fr;
+                    gap: 20px;
+                    height: 570px;
+                    img{
+                        height: 100%;
+                    }
+                }
+                article{
+                    align-content: center;
+                    p{
+                        padding-top: 20px;
+                        padding-bottom: 20px;
+                    }
+                    a{
+                        justify-self: start;
+                    }
+                }
+            }
+        }
+        .sixs3{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap : 20px;
+            padding-top: 60px;
+            padding-bottom: 60px;
+            max-width: 1140px;
+            margin: auto;
+            p{
+                padding-top: 20px;
+            }
+            article{
+                background-color: var(--grisfond);
+                padding: 15px;
+            }
+            >div{
+                grid-column: 1/3;
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                gap : 20px;
+                article{
+                    background-color: var(--grisfond);
+                }
+                .artgrid{
+                    grid-column:1 / -1;
+                }
+            }
+            >article{
+                align-content: center;
+                background-color: white;
+                p{
+                    padding-bottom: 20px;
+                }
+            }
+        }
+        .sixs4{
+            background-color: var(--grisfond);
+            >div{
+                max-width: 1140px;
+                margin: auto;
+            }
+        }
+    }
+}

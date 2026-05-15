@@ -1,0 +1,226 @@
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg: #f2ede6;
+      --ink: #111;
+      --R: 300px;
+    }
+
+    html, body {
+      width: 100%; height: 100%;
+      background: var(--bg);
+      overflow: hidden;
+      cursor: none;
+    }
+
+    /* grain paper texture via SVG filter */
+    body::before {
+      content: "";
+      position: fixed;
+      inset: 0;
+      background-image:
+        url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='300' height='300' filter='url(%23n)' opacity='0.08'/%3E%3C/svg%3E");
+      pointer-events: none;
+      z-index: 0;
+      opacity: .5;
+    }
+
+    .cursor {
+      position: fixed;
+      width: 14px; height: 14px;
+      border: 2px solid var(--ink);
+      border-radius: 50%;
+      pointer-events: none;
+      transform: translate(-50%, -50%);
+      z-index: 9999;
+      transition: transform .08s, width .2s, height .2s;
+      mix-blend-mode: multiply;
+    }
+    .cursor.hover {
+      width: 40px; height: 40px;
+    }
+
+    .scene {
+      position: fixed;
+      inset: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 1;
+    }
+
+    /* Orbit ring */
+    .orbit-ring {
+      position: relative;
+      width: calc(var(--R) * 2);
+      height: calc(var(--R) * 2);
+    }
+
+    svg.track {
+      position: absolute;
+      inset: 0;
+      width: 100%; height: 100%;
+      pointer-events: none;
+      overflow: visible;
+    }
+
+    .center-hub {
+      position: absolute;
+      top: 50%; left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      pointer-events: none;
+      user-select: none;
+      z-index: 2;
+    }
+
+    .center-hub .hub-word {
+      display: block;
+      font-family: 'Syne', sans-serif;
+      font-weight: 800;
+      font-size: clamp(28px, 4vw, 52px);
+      letter-spacing: -.02em;
+      color: var(--ink);
+      line-height: 1;
+    }
+
+    .center-hub .hub-sub {
+      display: block;
+      font-family: 'Courier Prime', monospace;
+      font-style: italic;
+      font-size: 10px;
+      letter-spacing: .2em;
+      color: #888;
+      margin-top: 6px;
+      text-transform: uppercase;
+    }
+
+    .hub-cross {
+      position: absolute;
+      top: 50%; left: 50%;
+      transform: translate(-50%, -50%);
+      width: 70px; height: 70px;
+      pointer-events: none;
+    }
+
+    /* Card nodes */
+    .orbit-node {
+      position: absolute;
+      top: 50%; left: 50%;
+      transform-origin: 0 0;
+    }
+
+    .card {
+      position: absolute;
+      transform: translate(-50%, -50%);
+      width: 110px;
+      height: 110px;
+      background: #fff;
+      border: 1.5px solid #222;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+      cursor: none;
+      overflow: hidden;
+      transition:
+        transform .3s cubic-bezier(.34,1.56,.64,1),
+        box-shadow .3s,
+        border-color .3s;
+      /* random tilt set via JS */
+    }
+
+    .card::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: var(--ink);
+      opacity: 0;
+      transition: opacity .25s;
+      mix-blend-mode: multiply;
+    }
+
+    .card:hover {
+      transform: translate(-50%, -50%) rotate(0deg) scale(1.18) !important;
+      box-shadow: 6px 6px 0 #111;
+      border-color: #111;
+      z-index: 10;
+    }
+
+    .card:hover::after {
+      opacity: .04;
+    }
+
+    .card img {
+      width: 80%;
+      height: 80%;
+      object-fit: contain;
+      display: block;
+      transition: transform .3s;
+    }
+
+    .card:hover img {
+      transform: scale(1.06);
+    }
+
+    /* corner index label */
+    .card-index {
+      position: absolute;
+      top: 5px; right: 7px;
+      font-family: 'Courier Prime', monospace;
+      font-size: 9px;
+      color: #bbb;
+      line-height: 1;
+    }
+
+    /* torn-tape top decoration */
+    .card-tape {
+      position: absolute;
+      top: -7px; left: 50%;
+      transform: translateX(-50%) rotate(-1deg);
+      width: 36px; height: 14px;
+      background: rgba(255,220,80,.85);
+      pointer-events: none;
+    }
+
+    /* bottom caption */
+    .bottom-bar {
+      position: fixed;
+      bottom: 0; left: 0; right: 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      padding: 20px 32px;
+      pointer-events: none;
+      z-index: 5;
+    }
+
+    .bottom-bar span {
+      font-family: 'Courier Prime', monospace;
+      font-size: 10px;
+      letter-spacing: .18em;
+      color: #aaa;
+      text-transform: uppercase;
+    }
+
+    .rpm-display {
+      font-variant-numeric: tabular-nums;
+    }
+
+    /* top corner mark */
+    .corner-mark {
+      position: fixed;
+      top: 28px; left: 32px;
+      font-family: 'Syne', sans-serif;
+      font-weight: 700;
+      font-size: 11px;
+      letter-spacing: .3em;
+      color: var(--ink);
+      text-transform: uppercase;
+      z-index: 5;
+      pointer-events: none;
+    }
+
+    /* decorative tick marks around orbit */
+    .tick { stroke: #ccc; stroke-width: .8; }

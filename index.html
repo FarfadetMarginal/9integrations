@@ -1,19 +1,39 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>999999999999999999999999999999999999999999999999999999999999</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>999999999999999</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&family=Courier+Prime:ital@0;1&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style/style.css">
 </head>
 <body>
-    <a href="dma/dma.html">111111111111111111</a>
-    <a href="ds/ds.html">22222222222222222</a>
-    <a href="nomade/nomade.html">3333333333333333</a>
-    <a href="mariage/mariage.html">44444444444444</a>
-    <a href="maquillage/maquillage.html">555555555</a>
-    <a href="boumboum/boumboum.html">6666666666</a>
-    <a href="ako/ako.html">777777777</a>
-    <a href="bioharvest/bioharvest.html">88888888</a>
-    <a href="btp/btp.html">999999999</a>
+
+<div class="cursor" id="cursor"></div>
+
+<div class="scene">
+  <div class="orbit-ring" id="orbitRing">
+
+    <svg class="track" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
+      <!-- Main orbit circle -->
+      <circle cx="300" cy="300" r="300" fill="none" stroke="#d0c9be" stroke-width="1" stroke-dasharray="2 8"/>
+      <!-- Tick marks every 40deg -->
+      <g id="ticks"></g>
+    </svg>
+
+    <!-- Center hub -->
+    <div class="center-hub">
+      <svg class="hub-cross" viewBox="0 0 70 70" xmlns="http://www.w3.org/2000/svg">
+        <line x1="35" y1="0" x2="35" y2="70" stroke="#222" stroke-width=".8"/>
+        <line x1="0" y1="35" x2="70" y2="35" stroke="#222" stroke-width=".8"/>
+        <circle cx="35" cy="35" r="4" fill="#222"/>
+        <circle cx="35" cy="35" r="18" fill="none" stroke="#ccc" stroke-width=".6"/>
+      </svg>
+    </div>
+
+  </div>
+</div>
+<script src="js/script.js"></script>
 </body>
 </html>

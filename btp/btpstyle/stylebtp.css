@@ -1,0 +1,283 @@
+:root{
+    --grisfond:#F1F1F1;
+}
+
+*{
+    margin:0;
+    scroll-behavior: smooth;
+    transition: all 0.3s ease-in-out;
+    font-family: "open sans";
+    
+    a{
+        text-decoration: none;
+    }
+    img{
+        width: 100%;
+        object-fit: cover;
+    }
+    ul{
+        list-style: none;
+        padding-left: 0;
+    }
+    h1, h2{
+        font-weight: 700;
+        font-size: 35px;
+        font-family: "arimo";
+        padding-top: 15px;
+    }
+    h3{
+        font-weight: 700;
+        font-size: 22px;
+        font-family: "arimo";
+    }
+    p{
+        font-size: 20px;
+        line-height: 24px;
+    }
+}
+
+body{
+    header, footer{
+        background-color: black;
+        >div{
+            max-width: 1920px;
+            margin: auto;
+            padding: 10px;
+            height: 75px;
+            justify-content: space-between;
+            display: flex;
+            align-items: center;
+            a{
+                color: white;
+                display: inline-block;
+                &:hover{
+                    transform: scale(1.1);
+                }
+            }
+            i{
+                font-size: 40px;
+            }
+            p{
+                color: white;
+                font-size: 16px;
+            }
+            nav{
+                ul{
+                    display: flex;
+                    gap: 40px;
+                }
+            }
+        }
+    }
+    main{
+        a, button{
+        display: block;
+        color: white;
+        background-color: black;
+        padding: 12px 24px 12px 24px;
+        border-style: solid;
+        border-width: 1px;
+        font-size: 16px;
+        width: fit-content;
+        border-radius: 3px;
+        &:hover{
+            background-color: white;
+            color: black;
+            }
+        }
+        span{
+            font-size: 16px;
+            font-family: "roboto";
+        }
+        .neufs1{
+            background-color: var(--grisfond);
+            >div{
+                max-width: 1440px;
+                margin: auto;
+                padding: 10px;
+                padding-top: 60px;
+                padding-bottom: 60px;
+                >div{
+                    display: flex;
+                    gap: 60px;
+                    img{
+                        max-width: 500px;
+                        overflow: hidden;
+                    }
+                    article{
+                        p{
+                            padding-bottom: 30px;
+                            padding-top: 30px;
+                        }
+                        h1{
+                            padding-top: 15px;
+                        }
+                        >div{
+                            display: flex;
+                            gap: 80px;
+                        }
+                        .p9b1{
+                            color: black;
+                            background-color: white;
+                            &:hover{
+                                color: white;
+                                background-color: black;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .neufs2{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            max-width: 1440px;
+            margin: auto;
+            padding: 10px;
+            padding-top: 60px;
+            padding-bottom: 60px;
+            img{
+                max-width: 700px;
+            }
+            article{
+                max-width: 640px;
+                justify-self: end;
+                align-content: center;
+                p{
+                    line-height: 30px;
+                    padding-top: 30px;
+                }
+            }
+        }
+        .neufs3{
+            max-width: 1140px;
+            margin: auto;
+            text-align: center;
+            padding: 10px;
+            padding-top: 60px;
+            padding-bottom: 60px;
+            p{
+                max-width: 888px;
+                font-family: "open sans";
+                line-height: 30px;
+                justify-self: center;
+                padding-top: 30px;
+                padding-bottom: 40px;
+            }
+            >div{
+                display: grid;
+                grid-template-columns: repeat(6,1fr);
+                gap: 20px;
+                .p9img1{
+                    grid-column: span 2;
+                }
+                .p9img2{
+                    grid-column: span 3;
+                }
+                img{
+                    height: 100%;
+                    max-height: 270px;
+                }
+            }
+        }
+        .neufs4{
+            max-width: 1140px;
+            margin: auto;
+            text-align: center;
+            padding: 10px;
+            padding-top: 60px;
+            padding-bottom: 60px;
+            p{
+                max-width: 888px;
+                font-family: "open sans";
+                line-height: 30px;
+                justify-self: center;
+                padding-top: 30px;
+                padding-bottom: 40px;
+            }
+            >div{
+                display: flex;
+                gap: 20px;
+                article{
+                    border-bottom-style: solid;
+                    border-bottom-width: 1px;
+                    border-color: black;
+                    i{
+                        font-size: 40px;
+                        padding-bottom: 20px;
+                    }
+                }
+            }
+        }
+        .neufs5{
+            background-color: var(--grisfond);
+            >div{
+                max-width: 560px;
+                margin: auto;
+                text-align: center;
+                padding: 10px;
+                padding-top: 60px;
+                padding-bottom: 60px;
+                p{
+                    line-height: 30px;
+                    padding-top: 30px;
+                    max-width: 480px;
+                }
+                form{
+                    display: grid;
+                    margin: 40px;
+                    gap: 20px;
+                    button{
+                        width: auto;
+                    }
+                    input, textarea{
+                        padding: 10px;
+                        border-color: #69727D;
+                        border-radius: 3px;
+                        border-width: 1px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width :767px) {
+    body{
+        header, footer{
+            >div{
+                height: max-content;
+                gap: 20px;
+                justify-content: center;
+                nav{
+                    ul{
+                        display: grid;
+                        gap: 5px;
+                    }
+                }
+            }
+        }
+        main{
+            .neufs1{
+                >div{
+                    >div{
+                        display: grid;
+                        article{
+                            >div{
+                                gap: 20px;
+                            }
+                        }
+                    }
+                }
+            }
+            .neufs2{
+                grid-template-columns: 1fr;
+            }
+            .neufs4{
+                >div{
+                    flex-wrap: wrap;
+                }
+            }
+        }
+    }
+}

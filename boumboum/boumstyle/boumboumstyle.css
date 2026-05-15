@@ -187,6 +187,7 @@ body{
             display: grid;
             grid-template-columns: 1fr 1fr 1fr;
             gap : 20px;
+            padding: 10px;
             padding-top: 60px;
             padding-bottom: 60px;
             max-width: 1140px;
@@ -223,7 +224,120 @@ body{
             >div{
                 max-width: 1140px;
                 margin: auto;
+                text-align: center;
+                padding: 10px;
+                padding-top: 60px;
+                padding-bottom: 60px;
+                h2{
+                    max-width: 200px;
+                    justify-self: center;
+                }
+                >p{
+                    padding-bottom: 60px;
+                    padding-top: 20px;
+                }
+                >div{
+                    display: grid;
+                    grid-template-columns: repeat(6,1fr);
+                    gap: 20px;
+                    .s6img1{
+                        grid-column: span 2;
+                    }
+                    .s6img2{
+                        grid-column: span 3;
+                    }
+                    img{
+                        height: 100%;
+                        max-height: 270px;
+                    }
+                }
+            }
+        }
+        .sixs5{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            max-width: 1440px;
+            margin: auto;
+            padding: 10px;
+            padding-top: 60px;
+            padding-bottom: 60px;
+            >div{
+                max-width: 720px;
+                align-content: center;
+                h2{
+                    padding-bottom: 30px;
+                }
+            }
+            form{
+                display: grid;
+                margin: 40px;
+                gap: 20px;
+                >div{
+                    display: flex;
+                    gap: 20px;
+                    >input{
+                        width: 100%;
+                    }
+                }
+                input, textarea{
+                    padding: 10px;
+                    border-color: #69727D;
+                    border-radius: 3px;
+                    border-width: 1px;
+                }
+                button{
+                    display: block;
+                    color: white;
+                    background-color: black;
+                    border-radius: 3px;
+                    padding: 12px 24px 12px 24px;
+                    border-style: none;
+                    font-size: 16px;
+                    border-style: solid;
+                    border-width: 1px;
+                    &:hover{
+                        background-color: white;
+                        color: black;
+                        border-color: black;
+                    }
+                }
             }
         }
     }
+}
+
+@media screen and (max-width :767px) {
+    body {
+        header{
+            display:grid ;
+            justify-items: center;
+            nav{
+                ul{
+                    li{
+                        padding: 2px;
+                    }
+                }
+            }
+        }
+        footer{
+            >div{
+                display: grid;
+                justify-items: center;
+            }
+        }
+        main{
+            .sixs2{
+                >div{
+                    grid-template-columns: 1fr;
+                }
+            }
+            .sixs3{
+                grid-template-columns: 1fr;
+            }
+            .sixs5{
+                grid-template-columns: 1fr;
+            }
+        }
+    }
+
 }
